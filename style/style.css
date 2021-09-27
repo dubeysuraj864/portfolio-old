@@ -1,8 +1,9 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #loading{
     position: fixed;
@@ -31,6 +32,7 @@ nav{
     justify-content: space-between;
     background-color:black;
     color: white;
+    z-index: 999;
 }
 nav .logo{
     font-family: 'Architects Daughter', cursive;
@@ -103,7 +105,7 @@ nav .menu-btn i{
   
 }
 /* ---------------------------------- */
-main{
+/* main{
     display: flex;
     align-content: center;
     align-items: center;
@@ -111,7 +113,7 @@ main{
     margin: 40px;
 
 
-}
+} */
 main .container1{
     
     display: flex;
@@ -120,6 +122,8 @@ main .container1{
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 main .container1 .left-side{
@@ -129,6 +133,8 @@ main .container1 .left-side{
     align-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
+    /* margin-top: 50px; */
     
 }
 main .container1 .right-side{
@@ -149,10 +155,7 @@ main .container1 .left-side .intro h1{
 }
 
 @media (max-width: 660px){
-    body{
-        
-        
-    }
+    
     main .container1{
        
         margin-top: 20px;
@@ -191,4 +194,51 @@ main .container1 .left-side .intro h1{
         font-family: 'Architects Daughter', cursive; font-weight: bold; 
     }
 
+}
+
+
+/* --------------------------------------CONTAINER2 */
+
+.container2{
+    background-color: white;
+    color: rgb(27, 27, 27);
+    height: 70vh;
+    font-size: 50px;
+
+    
+}
+.container2 .project{
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+   padding-top: 30px; 
+   font-family: 900; 
+}
+.container2 ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: medium;
+}
+.container2 ul li a{
+    display: flex;
+    padding-left: auto;
+    padding-right: auto;
+    margin: 20px;
+    text-decoration: none;
+    color:black;
+    margin-top: 50px;
+}
+
+@media (max-width: 660px){
+    .container2 ul{
+        margin-top: 50px;
+        display: table;
+    }
+    .container2 ul li a{
+        margin-top: 6px;
+    }
 }
