@@ -161,12 +161,17 @@ nav .menu-btn i{
     text-align: center;
 }
  .container1 .left-side .intro h1{
+     font-size: 40px;
     color: crimson; 
     font-family: 'Architects Daughter', cursive; font-weight: bold; 
 }
+.container1 .left-side .intro h3,span{
+    text-transform:none;
+    text-align: center; 
+}
 .container1 .left-side .intro p{
     margin-bottom: 25px; 
-    font-weight: bold; 
+    font-weight: 400; 
 }
 .container1 .left-side #sec-span{
   
@@ -372,7 +377,7 @@ nav .menu-btn i{
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
 }
-.bar span{
+.container3 .skill .bar span{
     height: 20px;
     float: left;
     background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
