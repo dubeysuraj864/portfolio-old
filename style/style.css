@@ -38,6 +38,8 @@ nav{
 nav .logo{
     font-family: 'Architects Daughter', cursive;
     margin: 10px;
+    margin-left: 0;
+    padding-left: ;
     font-size: 25px;
     font-weight: bold;
 }
@@ -50,9 +52,12 @@ nav .logo .logo-span{
 nav ul{
     display: flex;
     list-style: none;
+    background-color: black;
 }
 nav ul li a{
-    background-color: rgb(27, 27, 27);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    background-color: black;
     padding: 8px 15px;
     border-radius: 1000px;
     font-weight: bold;
@@ -63,8 +68,9 @@ nav ul li a{
 nav ul li a:hover{
     background-color: crimson;
 }
+
 #click:checked ~ul{
-    left: 0%;
+    right: 0%;
 }
 
 nav .menu-btn i{
@@ -78,25 +84,36 @@ nav .menu-btn i{
 }
 
 @media (max-width: 660px) {
+    nav{
+        display: flex;
+        position: sticky;
+    }
     
 
     nav .menu-btn i{
+        position: sticky;
         display: block;
     }
     #click:checked ~ .menu-btn i::before{
         content: "\f00d";
         color: white;
     }
+    
     nav ul{
         padding-top: 100px;
-        position: fixed;
+        position:fixed;
         top: 45px;
-        background: black;
+        background:black;
+        margin-top: 10px;
         height: 200vh;
-        left: -100%;
+        right: -100%;
         width: 100%;
         display: block;
         text-align: center;
+        justify-content: left;
+        align-content: left;
+        z-index: 99999;
+       
         transition: all 0.5s ease;
 
     }
@@ -104,8 +121,8 @@ nav .menu-btn i{
         margin: 50px 0;
     }
     nav ul li a{
-        background-color: rgb(27, 27, 27);
-        padding: 10px 20px;
+        /* background-color: rgb(27, 27, 27); */
+        padding: 9px 20px;
         border-radius: 1000px;
         font-weight: bold;
         text-decoration: none;
@@ -174,20 +191,21 @@ nav .menu-btn i{
     font-weight: 400; 
 }
 .container1 .left-side #sec-span{
-  
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(20, 10, 10);
     padding: 8px 15px; 
     font-weight:bold; 
     border-radius: 100px;  
     
 }
 .container1 .left-side #sec-span a{
+   font-weight: 700;
    text-decoration: none;
    color: white;
 }
 .container1 .left-side #sec-span:hover{
     text-decoration: none;
-    background-color: rgb(245, 11, 58);
+    background-color: red;
+    color: white;
     border: 0;
  }
 
@@ -237,7 +255,7 @@ nav .menu-btn i{
     }
     .container1 .left-side #sec-span{
   
-        background-color: rgb(27, 27, 27);
+        /* background-color: rgb(27, 27, 27); */
         padding: 15px 20px; 
         font-weight:bold; 
         border-radius: 100px;  
@@ -284,10 +302,14 @@ nav .menu-btn i{
     margin-top: 20px;
 }
 .github{
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     display: table;
     margin-left: auto;
     margin-right: auto; 
+}
+.github a img{
+    margin-top: 50px;
+    margin-left: 55px;
 }
 .github p{
    font-size: 10px;
@@ -342,10 +364,11 @@ nav .menu-btn i{
 }
 
 .container3 .skill{
+    padding-bottom: 50px;
     border-radius: 20px;
     font-size: 12px;
     background:rgb(54, 54, 54);
-    border: 2px solid black;
+    border:  rgb(87, 87, 87);
     text-transform: uppercase;
     width: 90%;
     margin: 20px auto;
@@ -367,7 +390,7 @@ nav .menu-btn i{
     background:rgb(70, 70, 70) ;
     display: block;
     height: auto;
-    border: 2px solid rgb(146, 146, 146);
+    /* border: 2px solid rgb(146, 146, 146); */
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -479,6 +502,25 @@ nav .menu-btn i{
 /* ----------------------------container4 contact */
 
 .container4{
+    padding-top: 20px;
+    padding-bottom: 50px;
     height: auto;
-    background-color: whitesmoke;
+    background-color: black;
+}
+.container4 .contact{
+        white-space:inherit;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+       padding-top: 30px; 
+}
+.container4 .form{
+    font-size: 20px;
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-bottom: 20px;
+}
+.container4 .contactslogo{
+    display: flexbox;
 }
