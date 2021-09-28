@@ -25,6 +25,7 @@ body{
 
 nav{
     width: auto;
+    margin: 9px;
     padding: 0px 20px 0px 20px;
     display: flex;
     text-align: center;
@@ -32,7 +33,7 @@ nav{
     justify-content: space-between;
     background-color:black;
     color: white;
-    z-index: 999;
+    z-index: 99999;
 }
 nav .logo{
     font-family: 'Architects Daughter', cursive;
@@ -51,14 +52,16 @@ nav ul{
     list-style: none;
 }
 nav ul li a{
+    background-color: rgb(27, 27, 27);
+    padding: 8px 15px;
+    border-radius: 1000px;
     font-weight: bold;
     text-decoration: none;
     color: white;
-    padding: 5px;
     margin: 10px;
 }
 nav ul li a:hover{
-    color: crimson;
+    background-color: crimson;
 }
 #click:checked ~ul{
     left: 0%;
@@ -98,33 +101,32 @@ nav .menu-btn i{
 
     }
     nav ul li{
-        margin: 40px 0;
+        margin: 50px 0;
     }
     nav ul li a{
+        background-color: rgb(27, 27, 27);
+        padding: 10px 20px;
+        border-radius: 1000px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
         font-size: 20px;
     } 
   
 }
-/* ---------------------------------- */
-/* main{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-    margin: 40px;
-
-
-} */
+/* ---------------------------------main */
 .container1{
-    
+    height: 85vh;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: auto;
+    margin-top: auto;
+    /* margin-bottom: 30px; */
+    /* margin-top: 20px; */
 }
 
 .container1 .left-side{
@@ -134,38 +136,68 @@ nav .menu-btn i{
     align-content: center;
     margin-left: auto;
     margin-right: auto;
-    /* margin-bottom: 50px; */
-    /* margin-top: 50px; */
-    
+    margin-bottom: auto;
+    margin-top: auto;
+        
 }
+
+
 .container1 .right-side{
+
     display: flex;
     width: 40%;
     justify-content: right;
     margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-right: auto;
     justify-content: space-between;
 }
 .container1 .right-side img{
+    /* margin-top: 50px; */
     border-radius: 1000px;
+}
+.container1 .left-side .intro{
+    text-align: center;
 }
  .container1 .left-side .intro h1{
     color: crimson; 
     font-family: 'Architects Daughter', cursive; font-weight: bold; 
 }
+.container1 .left-side .intro p{
+    margin-bottom: 25px; 
+    font-weight: bold; 
+}
+.container1 .left-side #sec-span{
+  
+    background-color: rgb(27, 27, 27);
+    padding: 8px 15px; 
+    font-weight:bold; 
+    border-radius: 100px;  
+    
+}
+.container1 .left-side #sec-span a{
+   text-decoration: none;
+   color: white;
+}
+.container1 .left-side #sec-span:hover{
+    text-decoration: none;
+    background-color: rgb(245, 11, 58);
+    border: 0;
+ }
 
 @media (max-width: 660px){
     
     .container1{
         font-family: Arial, Helvetica, sans-serif;
-        margin-top: 20px;
+        /* margin-top: 20px; */
         text-align: center;
         display: inline-flex;
         flex-direction: column-reverse;
         justify-items: center;
         justify-self: center;
-        margin: 0;
-        padding: 0;
+        /* margin: 0;
+        padding: 0; */
     }
 
     .container1 .left-side{
@@ -175,34 +207,45 @@ nav .menu-btn i{
         width: 100%;  
         display: flex;
         align-items: center;
-        margin-top: 20px;
+        /* margin-top: 20px; */
         text-align: center;
         display: inline-flex;
         flex-direction: column-reverse;
         justify-items: center;
         justify-self: center;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
 
     }
     .container1 .right-side img{
         border-radius: 1000px;
-            margin-left: 0px;
+            /* margin-left: 0px; */
     
     }
     .container1 .left-side .intro h1{
         color: crimson; 
         font-family: 'Architects Daughter', cursive; font-weight: bold; 
     }
+    .container1 .left-side .intro p{
+        display: flex;    
+    }
+    .container1 .left-side #sec-span{
+  
+        background-color: rgb(27, 27, 27);
+        padding: 15px 20px; 
+        font-weight:bold; 
+        border-radius: 100px;  
+        
+    }
 
 }
 
 
-/* --------------------------------------CONTAINER2 */
+/* --------------------------------------CONTAINER2 projectsS */
 
 .container2{
     background-color: white;
     color: rgb(27, 27, 27);
-    height: 75vh;
+    height: 90vh;
     font-size: 30px;
 
     
@@ -226,54 +269,83 @@ nav .menu-btn i{
     display: flex;
     padding-left: auto;
     padding-right: auto;
-    margin: 20px;
+    margin: 10px;
     text-decoration: none;
     color:black;
-    margin-top: 50px;
+    margin-top: 20px;
+}
+.github{
+    padding: 10px 20px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.github p{
+   font-size: 10px;
+   display: table;
+   text-decoration: none;
+   font-weight: bold;
+   color: gray;
+    
 }
 
 @media (max-width: 660px){
     .container2 ul{
-        margin-top: 50px;
+        margin-top: 20px;
         display: table;
     }
     .container2 ul li a{
-        margin-top: 6px;
+        
+        margin-top: 10px;
+         
     }
 }
-
+/* ---------------------------container3 About */
 .container3{
-    background-color: rgb(27, 27, 27);
-    color: white;
     width: 100%;
     height: 100vh;
+    background-color: rgb(27, 27, 27);
+    color: white;
     font-size: 30px;
 }
 
 .container3 .about{
-    position: relative;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
    padding-top: 30px; 
 }
+.container3 .about p{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: auto;
+}
 
 @media (max-width: 660px){
     
     .container3{
+        width: 100%;
+        height: 100vh;
         background-color: rgb(27, 27, 27);
         color: white;
-        width: 100%;
-        height: 80vh;
         font-size: 30px;
     }
     .container3 .about{
-        position: relative;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
        padding-top: 30px;
+    }
+    .container3 .about p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
 }
-/* ----------------------------contact */
 
+/* ----------------------------container4 contact */
+
+.container4{
+    height: 90vh;
+    background-color: whitesmoke;
+}
