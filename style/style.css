@@ -313,6 +313,7 @@ span {
   color: rgb(27, 27, 27);
   height: auto;
   font-size: 30px;
+
 }
 .container2 .project {
  font-size: 30px;
@@ -381,12 +382,13 @@ span {
 /* ---------------------------container3 About */
 .container3 {
   padding-top: 50px;
-  padding-bottom: 5px;
+  padding-bottom: 50px;
   width: 100%;
   height: auto;
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(31, 31, 31);
   color: white;
   font-size: 30px;
+  /* margin-bottom: 100px; */
 }
 
 .container3 .about-text {
@@ -399,24 +401,23 @@ span {
   border-radius: 20px;
   
 }
+
 .container3 .about p {
   margin-left: 50px;
   margin-right: 50px;
-  margin-bottom: auto;
-
+  font-size: 20px; padding: 30px;
 }
 
 .container3 .skill {
-  padding-bottom: 50px;
   border-radius: 20px;
   font-size: 12px;
-  background: rgb(54, 54, 54);
+  background-color: rgb(75, 75, 75);
   border: rgb(87, 87, 87);
   text-transform: uppercase;
   width: 90%;
   margin: 20px auto;
   color: white;
-  padding: 20px;
+  padding: 30px;
 }
 .container3 .skill h1,
 h3 {
@@ -448,8 +449,8 @@ h3 {
   float: left;
   background: linear-gradient(
     135deg,
-    rgba(236, 0, 140, 1) 0%,
-    rgba(252, 103, 103, 1) 100%
+    rgb(20, 220, 153) 0%,
+    rgb(24, 181, 238) 100%
   );
 }
 .html {
@@ -540,7 +541,7 @@ h3 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30px;
+    /* padding-top: 30px; */
   }
   .container3 .about p {
     margin-left: 10px;
@@ -561,7 +562,8 @@ h3 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 30px;
+  padding: 0px;
+  margin-bottom: 40px;
 }
 .container4 .form {
   font-size: 20px;
@@ -572,4 +574,8 @@ h3 {
 }
 .container4 .contactslogo {
   display: flexbox;
+}
+.input, textarea, button{
+    outline : none;
+    border: none;
 }
