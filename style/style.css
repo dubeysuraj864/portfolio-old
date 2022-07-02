@@ -262,7 +262,7 @@ span {
     text-align: center;
   }
   .container1 .right-side {
-    margin-top: 0;
+    margin-top: 20px;
   }
   .container1 .right-side img {
  
@@ -299,7 +299,7 @@ span {
     border-radius: 100px;
     background: crimson;
     box-shadow: 0 0 50px crimson;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     
   }
 }
