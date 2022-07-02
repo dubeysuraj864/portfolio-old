@@ -132,7 +132,7 @@ nav .menu-btn i {
     transition: all 0.5s ease;
   }
   nav ul li {
-    margin: 70px 0;
+    margin: 50px 0;
 
   }
   nav ul li a {
@@ -253,22 +253,24 @@ span {
     flex-direction: column-reverse;
     justify-items: center;
     justify-self: center;
-    height: 88vh;
+    height: 75vh;
   }
 
   .container1 .left-side {
     width: 90%;
+    margin-top: 0;
     text-align: center;
   }
   .container1 .right-side {
-     
+    margin-top: 0;
   }
   .container1 .right-side img {
-    width: 300px;
-    height: 300px;
+ 
+    width: 250px;
+    height:250px;
   border-radius: 50%;
-  background: crimson;
-  box-shadow: 0 0 50px crimson;
+  /* background: crimson; */
+  /* box-shadow: 0 0 50px crimson; */
   }
   .container1 .left-side .intro h1 {
     font-size: 45px;
@@ -297,6 +299,7 @@ span {
     border-radius: 100px;
     background: crimson;
     box-shadow: 0 0 50px crimson;
+    margin-bottom: 50px;
     
   }
 }
