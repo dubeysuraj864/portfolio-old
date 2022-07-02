@@ -19,6 +19,7 @@ body {
   background-color: black;
   color: white;
   font-family: 'Potta One', cursive;
+  user-select: none;
 }
 
 
@@ -62,13 +63,16 @@ nav ul li a {
   background-color: black;
   padding: 8px 15px;
   border-radius: 1000px;
-  font-weight: bold;
+  font-weight: Normal;
   text-decoration: none;
   color: white;
   margin: 10px;
+ 
+
 }
 nav ul li a:hover {
   background-color: crimson;
+
 }
 
 #click:checked ~ ul {
@@ -107,6 +111,7 @@ nav .menu-btn i {
   #click:checked ~ .menu-btn i::before {
     content: "\f00d";
     color: white;
+    
   }
 
   nav ul {
@@ -127,16 +132,21 @@ nav .menu-btn i {
     transition: all 0.5s ease;
   }
   nav ul li {
-    margin: 50px 0;
+    margin: 70px 0;
+
   }
   nav ul li a {
     /* background-color: rgb(27, 27, 27); */
     padding: 9px 20px;
+  
     border-radius: 1000px;
     font-weight: bold;
     text-decoration: none;
     color: white;
     font-size: 20px;
+    background: crimson;
+    box-shadow: 0 0 30px crimson;
+ 
   }
 }
 
@@ -179,6 +189,7 @@ nav .menu-btn i {
   margin-right: auto;
 }
 .container1 .right-side img {
+    border: crimson 10px solid;
     width: 400px;
     height: 400px;
   border-radius: 50%;
@@ -189,7 +200,7 @@ nav .menu-btn i {
 .container1 .left-side .intro h1 {
   font-size: 70px;
   font-weight: bolder;
-  color: crimson;
+  color: rgb(245, 32, 75);
   font-family: "Architects Daughter", cursive;
 
 }
@@ -224,6 +235,11 @@ span {
   background-color: crimson;
   color: white;
   border: 0;
+  color: #111;
+  transition: all 1000ms ease-out;
+  background: crimson;
+  box-shadow: 0 0 50px crimson;
+
 }
 
 @media (max-width: 660px) {
@@ -251,6 +267,8 @@ span {
     width: 300px;
     height: 300px;
   border-radius: 50%;
+  background: crimson;
+  box-shadow: 0 0 50px crimson;
   }
   .container1 .left-side .intro h1 {
     font-size: 45px;
@@ -268,14 +286,18 @@ span {
     text-align: center;
     justify-content: center;
     display: flex;
+    
 
   }
-  .container1 .left-side ,#sec-span {
+  .container1 .left-side #sec-span {
     text-align: center;
     /* background-color: rgb(27, 27, 27); */
     padding: 15px 05px;
     font-weight: bold;
     border-radius: 100px;
+    background: crimson;
+    box-shadow: 0 0 50px crimson;
+    
   }
 }
 
