@@ -100,7 +100,7 @@ nav .menu-btn i {
         margin: 10px 0px; 
     }
   nav {
-    margin: 25px 25px;
+    margin: 5px 25px;
     display: flex;
   }
 
@@ -253,7 +253,7 @@ span {
     flex-direction: column-reverse;
     justify-items: center;
     justify-self: center;
-    height: 65vh;
+    height: 68vh;
   }
 
   .container1 .left-side {
@@ -262,10 +262,10 @@ span {
     text-align: center;
   }
   .container1 .right-side {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .container1 .right-side img {
- 
+
     width: 250px;
     height:250px;
   border-radius: 50%;
