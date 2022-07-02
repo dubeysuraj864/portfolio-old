@@ -14,11 +14,14 @@
 }
 
 body {
-  margin: 0;
+  margin: 30px 50px; 
   padding: 0;
   background-color: black;
   color: white;
+  font-family: 'Potta One', cursive;
 }
+
+
 
 nav {
   width: auto;
@@ -31,6 +34,7 @@ nav {
   background-color: black;
   color: white;
   z-index: 99999;
+  margin: 30px 50px; 
 }
 nav .logo {
   font-family: "Architects Daughter", cursive;
@@ -88,7 +92,11 @@ nav .menu-btn i {
 
 
 @media (max-width: 660px) {
+    body{
+        margin: 10px 0px; 
+    }
   nav {
+    margin: 15px 5px;
     display: flex;
   }
 
@@ -138,7 +146,7 @@ nav .menu-btn i {
 /* ------------------------------------------------------------------ */
 /* ---------------------------------main */
 .container1 {
-  height: 80vh;
+  height: 75vh;
   display: flex;
   align-content: center;
   align-items: center;
@@ -179,35 +187,41 @@ nav .menu-btn i {
   text-align: left;
 }
 .container1 .left-side .intro h1 {
-  font-size: 40px;
+  font-size: 70px;
+  font-weight: bolder;
   color: crimson;
   font-family: "Architects Daughter", cursive;
-  font-weight: bold;
+
 }
 .container1 .left-side .intro h3,
 span {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
   text-transform: none;
   text-align: left;
 }
 .container1 .left-side .intro p{
-  margin-left: -23px;
+    font-family: 'Lato', sans-serif;
+  margin-left: -18px;
   margin-bottom: 25px;
-  font-weight: 800;
+  font-weight: 500;
 }
 .container1 .left-side #sec-span {
   background-color: rgb(20, 10, 10);
-  padding: 8px 15px;
+  padding: 20px 45px;
   font-weight: bold;
   border-radius: 100px;
 }
 .container1 .left-side #sec-span a {
-  font-weight: 700;
+    font-size: 20px;
+  font-weight: 800;
   text-decoration: none;
   color: white;
 }
 .container1 .left-side #sec-span:hover {
   text-decoration: none;
-  background-color: red;
+  background-color: crimson;
   color: white;
   border: 0;
 }
@@ -239,6 +253,7 @@ span {
   border-radius: 50%;
   }
   .container1 .left-side .intro h1 {
+    font-size: 45px;
     text-align: center;
     color: crimson;
     font-family: "Architects Daughter", cursive;
@@ -253,11 +268,12 @@ span {
     text-align: center;
     justify-content: center;
     display: flex;
+
   }
-  .container1 .left-side #sec-span a{
+  .container1 .left-side ,#sec-span {
     text-align: center;
     /* background-color: rgb(27, 27, 27); */
-    padding: 15px 20px;
+    padding: 15px 05px;
     font-weight: bold;
     border-radius: 100px;
   }
