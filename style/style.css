@@ -1,526 +1,523 @@
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-#loading{
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: black url("/images/Spinner-dark.gif") no-repeat center;
+  background-size: 100px;
+  z-index: 9999;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+nav {
+  width: auto;
+  margin: 9px;
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  z-index: 99999;
+}
+nav .logo {
+  font-family: "Architects Daughter", cursive;
+  margin: 10px;
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+nav .logo .logo-span {
+  color: crimson;
+  font-family: "Architects Daughter", cursive;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  background-color: black;
+}
+nav ul li a {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  background-color: black;
+  padding: 8px 15px;
+  border-radius: 1000px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+nav ul li a:hover {
+  background-color: crimson;
+}
+
+#click:checked ~ ul {
+  right: 0%;
+}
+
+nav .menu-btn i {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+#click {
+  display: none;
+}
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
+
+@media (max-width: 660px) {
+  nav {
+    display: flex;
+  }
+
+  nav .menu-btn i {
+    position: sticky;
+    display: block;
+  }
+  #click:checked ~ .menu-btn i::before {
+    content: "\f00d";
+    color: white;
+  }
+
+  nav ul {
+    padding-top: 100px;
     position: fixed;
+    top: 45px;
+    background: black;
+    margin-top: 10px;
+    height: 200vh;
+    right: -100%;
     width: 100%;
-    height: 100vh;
-    background: black
-    url('/images/Spinner-dark.gif') no-repeat center;
-    background-size: 100px;
-    z-index: 9999;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
-
-}
-
-nav{
-    width: auto;
-    margin: 9px;
-    padding: 0px 20px 0px 20px;
-    display: flex;
+    display: block;
     text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    background-color:black;
-    color: white;
+    justify-content: left;
+    align-content: left;
     z-index: 99999;
-}
-nav .logo{
-    font-family: 'Architects Daughter', cursive;
-    margin: 10px;
-    margin-left: 0;
-    padding-left: 0;
-    font-size: 25px;
-    font-weight: bold;
-}
-nav .logo .logo-span{
-    color:crimson; 
-    font-family: 'Architects Daughter', cursive; font-size: 25px; 
-    font-weight: bold;
-}
 
-nav ul{
-    display: flex;
-    list-style: none;
-    background-color: black;
-}
-nav ul li a{
-    font-family: sans-serif;
-    text-transform: uppercase;
-    background-color: black;
-    padding: 8px 15px;
+    transition: all 0.5s ease;
+  }
+  nav ul li {
+    margin: 50px 0;
+  }
+  nav ul li a {
+    /* background-color: rgb(27, 27, 27); */
+    padding: 9px 20px;
     border-radius: 1000px;
     font-weight: bold;
     text-decoration: none;
     color: white;
-    margin: 10px;
-}
-nav ul li a:hover{
-    background-color: crimson;
-}
-
-#click:checked ~ul{
-    right: 0%;
-}
-
-nav .menu-btn i{
-    color: white;
     font-size: 20px;
-    cursor: pointer;
-    display: none;
+  }
 }
-#click{
-    display: none;
+
+/* ------------------------------------------------------------------ *//* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ---------------------------------main */
+.container1 {
+  height: 80vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+.container1 .left-side {
+  display: flex;
+  width: 40%;
+  justify-content: left;
+  align-content: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.container1 .right-side {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+.container1 .right-side img {
+    width: 400px;
+    height: 400px;
+  border-radius: 50%;
+}
+.container1 .left-side .intro {
+  text-align: left;
+}
+.container1 .left-side .intro h1 {
+  font-size: 40px;
+  color: crimson;
+  font-family: "Architects Daughter", cursive;
+  font-weight: bold;
+}
+.container1 .left-side .intro h3,
+span {
+  text-transform: none;
+  text-align: left;
+}
+.container1 .left-side .intro p{
+  margin-left: -23px;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+.container1 .left-side #sec-span {
+  background-color: rgb(20, 10, 10);
+  padding: 8px 15px;
+  font-weight: bold;
+  border-radius: 100px;
+}
+.container1 .left-side #sec-span a {
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+.container1 .left-side #sec-span:hover {
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  border: 0;
 }
 
 @media (max-width: 660px) {
-    nav{
-        display: flex;
-      
-    }
-    
-
-    nav .menu-btn i{
-        position: sticky;
-        display: block;
-    }
-    #click:checked ~ .menu-btn i::before{
-        content: "\f00d";
-        color: white;
-    }
-    
-    nav ul{
-        padding-top: 100px;
-        position:fixed;
-        top: 45px;
-        background:black;
-        margin-top: 10px;
-        height: 200vh;
-        right: -100%;
-        width: 100%;
-        display: block;
-        text-align: center;
-        justify-content: left;
-        align-content: left;
-        z-index: 99999;
-       
-        transition: all 0.5s ease;
-
-    }
-    nav ul li{
-        margin: 50px 0;
-    }
-    nav ul li a{
-        /* background-color: rgb(27, 27, 27); */
-        padding: 9px 20px;
-        border-radius: 1000px;
-        font-weight: bold;
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-    } 
-  
-}
-/* ---------------------------------main */
-.container1{
+  .container1 {
+    padding-top: 50px;
+    padding-bottom: 5px;
     height: auto;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    padding-top: 0px;
-    padding-bottom: 50px;
-}
-
-.container1 .left-side{
-    display: inline-flexbox;
-    width: 50%;
-    justify-content:space-between;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-top: auto;
-        
-}
-
-
-.container1 .right-side{
-
-    display: flex;
-    width: 40%;
-    justify-content: right;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: auto;
-    justify-content: space-between;
-   
-}
-.container1 .right-side img{
-    /* margin-top: 50px; */
-    border-radius: 1000px;
-}
-.container1 .left-side .intro{
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-}
- .container1 .left-side .intro h1{
-     font-size: 40px;
-    color: crimson; 
-    font-family: 'Architects Daughter', cursive; font-weight: bold; 
-}
-.container1 .left-side .intro h3,span{
-    text-transform:none;
-    text-align: center; 
-}
-.container1 .left-side .intro p{
-    margin-bottom: 25px; 
-    font-weight: 400; 
-}
-.container1 .left-side #sec-span{
-    background-color: rgb(20, 10, 10);
-    padding: 8px 15px; 
-    font-weight:bold; 
-    border-radius: 100px;  
-    
-}
-.container1 .left-side #sec-span a{
-   font-weight: 700;
-   text-decoration: none;
-   color: white;
-}
-.container1 .left-side #sec-span:hover{
-    text-decoration: none;
-    background-color: red;
-    color: white;
-    border: 0;
- }
+    display: inline-flex;
+    flex-direction: column-reverse;
+    justify-items: center;
+    justify-self: center;
+    height: 88vh;
+  }
 
-@media (max-width: 660px){
-    
-    .container1{
-        padding-top: 50px;
-        padding-bottom: 5px;
-        height: auto;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        display: inline-flex;
-        flex-direction: column-reverse;
-        justify-items: center;
-        justify-self: center;
-        height: 88vh;
-        
-    }
+  .container1 .left-side {
+    width: 90%;
+    text-align: center;
+  }
+  .container1 .right-side {
+     
+  }
+  .container1 .right-side img {
+    width: 300px;
+    height: 300px;
+  border-radius: 50%;
+  }
+  .container1 .left-side .intro h1 {
+    text-align: center;
+    color: crimson;
+    font-family: "Architects Daughter", cursive;
+    font-weight: bold;
 
-    .container1 .left-side{
-        width: 100%;
-    }
-    .container1 .right-side{
-        width: 100%;  
-        display: flex;
-        align-items: center;
-        /* margin-top: 20px; */
-        text-align: center;
-        display: inline-flex;
-        flex-direction: column-reverse;
-        justify-items: center;
-        justify-self: center;
-        /* padding-bottom: 50px; */
-
-    }
-    .container1 .right-side img{
-        border-radius: 1000px;
-            /* margin-left: 0px; */
-    
-    }
-    .container1 .left-side .intro h1{
-        color: crimson; 
-        font-family: 'Architects Daughter', cursive; font-weight: bold; 
-    }
-    .container1 .left-side .intro p{
-        display: flex;    
-    }
-    .container1 .left-side #sec-span{
-  
-        /* background-color: rgb(27, 27, 27); */
-        padding: 15px 20px; 
-        font-weight:bold; 
-        border-radius: 100px;  
-        
-    }
-
+  }
+  .container1 .left-side .intro h3{
+    text-align: center;
+  }
+  .container1 .left-side .intro p, #sec-span {
+    margin-left: 0px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  .container1 .left-side #sec-span a{
+    text-align: center;
+    /* background-color: rgb(27, 27, 27); */
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 100px;
+  }
 }
-
 
 /* --------------------------------------CONTAINER2 projectsS */
 
-.container2{
+.container2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white;
+  color: rgb(27, 27, 27);
+  height: auto;
+  font-size: 30px;
+}
+.container2 .project {
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}
+.container2 ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: medium;
+}
+.container2 ul li a {
+  display: flex;
+  padding-left: auto;
+  padding-right: auto;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+}
+.github {
+  /* padding: 10px 20px; */
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.github a img {
+  margin-top: 50px;
+  margin-left: 55px;
+}
+.github p {
+  font-size: 10px;
+  display: table;
+  text-decoration: none;
+  font-weight: bold;
+  color: gray;
+}
+
+@media (max-width: 660px) {
+  .container2 {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: white;
     color: rgb(27, 27, 27);
     height: auto;
     font-size: 30px;
-
-    
-}
-.container2 .project{
-    position: relative;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-   padding-top: 30px;  
-}
-.container2 ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: medium;
-}
-.container2 ul li a{
-    display: flex;
-    padding-left: auto;
-    padding-right: auto;
-    margin: 10px;
-    text-decoration: none;
-    color:black;
-    margin-top: 20px;
-}
-.github{
-    /* padding: 10px 20px; */
+  }
+  .container2 ul {
     display: table;
-    margin-left: auto;
-    margin-right: auto; 
-}
-.github a img{
-    margin-top: 50px;
-    margin-left: 55px;
-}
-.github p{
-   font-size: 10px;
-   display: table;
-   text-decoration: none;
-   font-weight: bold;
-   color: gray;
-    
-}
+  }
+  .container2 ul li a {
 
-@media (max-width: 660px){
-    .container2{
-        padding-top: 50px;
-    padding-bottom: 50px;
-        background-color: white;
-        color: rgb(27, 27, 27);
-        height: auto;
-        font-size: 30px;
-    
-        
-    }
-    .container2 ul{
-        display: table;
-    }
-    .container2 ul li a{
-        
-       
-         
-    }
+  }
 }
 /* ---------------------------container3 About */
-.container3{
+.container3 {
+  padding-top: 50px;
+  padding-bottom: 5px;
+  width: 100%;
+  height: auto;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  font-size: 30px;
+}
+
+.container3 .about {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}
+.container3 .about p {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: auto;
+}
+
+.container3 .skill {
+  padding-bottom: 50px;
+  border-radius: 20px;
+  font-size: 12px;
+  background: rgb(54, 54, 54);
+  border: rgb(87, 87, 87);
+  text-transform: uppercase;
+  width: 90%;
+  margin: 20px auto;
+  color: white;
+  padding: 20px;
+}
+.container3 .skill h1,
+h3 {
+  padding-bottom: 10px;
+
+  text-align: left;
+  text-transform: uppercase;
+}
+.container3 .skill li {
+  list-style: none;
+  margin: 5px 0;
+  padding: 5px;
+}
+.container3 .skill .bar {
+  background: rgb(70, 70, 70);
+  display: block;
+  height: auto;
+  /* border: 2px solid rgb(146, 146, 146); */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.container3 .skill .bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.container3 .skill .bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(
+    135deg,
+    rgba(236, 0, 140, 1) 0%,
+    rgba(252, 103, 103, 1) 100%
+  );
+}
+.html {
+  width: 77%;
+  animation: html 3s;
+}
+.css {
+  width: 70%;
+  animation: css 3s;
+}
+.javascript {
+  width: 35%;
+  animation: javascript 3s;
+}
+.bootstrap {
+  width: 50%;
+  animation: bootstrap 3s;
+}
+.java {
+  width: 40%;
+  animation: java 3s;
+}
+.cpp {
+  width: 60%;
+  animation: cpp 3s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 77%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 35%;
+  }
+}
+@keyframes bootstrap {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@keyframes cpp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@media (max-width: 660px) {
+  .container3 {
     padding-top: 50px;
-    padding-bottom: 5px;
+    padding-bottom: 50px;
     width: 100%;
     height: auto;
     background-color: rgb(27, 27, 27);
     color: white;
     font-size: 30px;
-}
-
-.container3 .about{
+  }
+  .container3 .about {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-   padding-top: 30px; 
-}
-.container3 .about p{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: auto;
-}
-
-.container3 .skill{
-    padding-bottom: 50px;
-    border-radius: 20px;
-    font-size: 12px;
-    background:rgb(54, 54, 54);
-    border:  rgb(87, 87, 87);
-    text-transform: uppercase;
-    width: 90%;
-    margin: 20px auto;
-    color: white;
-    padding: 20px;
-}
-.container3 .skill h1,h3{
-    padding-bottom:10px;
-
-    text-align: left;
-    text-transform: uppercase;
-}
-.container3 .skill li{
-    list-style: none;
-    margin: 5px 0;
-    padding: 5px;
-}
-.container3 .skill .bar{
-    background:rgb(70, 70, 70) ;
-    display: block;
-    height: auto;
-    /* border: 2px solid rgb(146, 146, 146); */
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(.25, .8,.25,1);
-}
-.container3 .skill .bar:hover{
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-
-}
-.container3 .skill .bar span{
-    height: 20px;
-    float: left;
-    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
-}
-.html{
-    width: 77%;
-    animation: html 3s;
-}
-.css{
-    width: 70%;
-    animation: css 3s;
-}
-.javascript{
-    width: 35%;
-    animation: javascript 3s;
-}
-.bootstrap{
-    width: 50%;
-    animation: bootstrap 3s;
-}
-.java{
-    width: 40%;
-    animation: java 3s;
-}
-.cpp{
-    width: 60%;
-    animation: cpp 3s;
-}
-
-@keyframes html {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 77%;
-    }
-}
-@keyframes css {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 70%;
-    }
-}@keyframes javascript {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 35%;
-    }
-}@keyframes bootstrap {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 50%;
-    }
-}@keyframes java {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 40%;
-    }
-}@keyframes cpp {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 60%;
-    }
-}
-
-@media (max-width: 660px){
-    
-    .container3{
-        padding-top: 50px;
-    padding-bottom: 50px;
-        width: 100%;
-        height: auto;
-        background-color: rgb(27, 27, 27);
-        color: white;
-        font-size: 30px;
-    }
-    .container3 .about{
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-       padding-top: 30px;
-    }
-    .container3 .about p{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
+    padding-top: 30px;
+  }
+  .container3 .about p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 /* ----------------------------container4 contact */
 
-.container4{
-    padding-top: 20px;
-    padding-bottom: 50px;
-    height: auto;
-    background-color: black;
+.container4 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  height: auto;
+  background-color: black;
 }
-.container4 .contact{
-        white-space:inherit;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-       padding-top: 30px; 
+.container4 .contact {
+  white-space: inherit;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
 }
-.container4 .form{
-    font-size: 20px;
-    display: flex;
- justify-content: center;
- align-items: center;
- padding-bottom: 20px;
+.container4 .form {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
 }
-.container4 .contactslogo{
-    display: flexbox;
+.container4 .contactslogo {
+  display: flexbox;
 }
