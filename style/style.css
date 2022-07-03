@@ -42,7 +42,7 @@ nav .logo {
   margin: 10px;
   margin-left: 0;
   padding-left: 0;
-  font-size: 25px;
+  font-size: 33px;
   font-weight: bold;
 }
 nav .logo .logo-span {
@@ -253,7 +253,7 @@ span {
     flex-direction: column-reverse;
     justify-items: center;
     justify-self: center;
-    height: 68vh;
+    height: 75vh;
   }
 
   .container1 .left-side {
